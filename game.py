@@ -180,10 +180,10 @@ def print_menu(exits):
     Where do you want to go?
     """
     print("You can:")
-    
-    # COMPLETE THIS PART:
+    for directions in exits:
     # Iterate over available exits:
-    #     and for each exit print the appropriate menu line
+        print_menu_line(directions, exit_leads_to(exits, directions))
+        #and for each exit print the appropriate menu line
 
     print("Where do you want to go?")
 
