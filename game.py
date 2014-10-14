@@ -143,8 +143,7 @@ def exit_leads_to(exits, direction):
     >>> exit_leads_to(rooms["Tutor"]["exits"], "west")
     'Reception'
     """
-    pass
-    
+    return rooms[exits[direction]]["name"]
 
 def print_menu_line(direction, leads_to):
     """This function prints a line of a menu of exits. It takes a direction (the
