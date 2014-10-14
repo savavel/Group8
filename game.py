@@ -17,7 +17,18 @@ def remove_punct(text):
     >>> remove_punct(",go!So.?uTh")
     'goSouTh'
     """
-    pass # The pass statement does nothing. Replace it with the body of your function.
+    # create an empty string to store the result
+    result = ""
+
+    # iterate through the text
+    for char in text:
+        # if the current character isn't punctuation
+        if char not in string.punctuation:
+            # append the current character to the result string
+            result += char
+
+    # return the result string
+    return result
     
     
 def remove_spaces(text):
@@ -36,7 +47,51 @@ def remove_spaces(text):
     >>> remove_spaces("   ")
     ''
     """
-    pass
+    # set start and end to nothing to start off with
+    start = None
+    end = None
+
+    # start index at 0
+    i = 0
+    # iterate through the text forwards
+    while i < len(text):
+        # if the current character isn't a space
+        if text[i] != " ":
+            # set the start of the string to the current index
+            start = i
+            # end the loop
+            break
+        else:
+            # otherwise increment the index by one
+            i += 1
+
+    # if there aren't any non-space characters return an empty string
+    if start == None:
+        return ""
+
+    # start the index at -1
+    i = -1
+    # iterate through the text backwards
+    while i > -len(text):
+        # if the current character isn't a space
+        if text[i] != " ":
+            # set the end of the string to the current index
+            end = i
+            # end the loop
+            break
+        else:
+            # otherwise increment the index by one
+            i -= 1
+
+    # if the end isn't just the end of the string, add one so the last character isn't chopped off
+    if end != -1:
+        end += 1
+    else:
+        # otherwise set the end to none so it just goes to the end of the string
+        end = None
+
+    # return the substring
+    return text[start:end]
 
 
 def normalise_input(user_input):
@@ -147,7 +202,7 @@ def is_valid_exit(exits, user_input):
     >>> is_valid_exit(rooms["Parking"]["exits"], "east")
     True
     """
-    pass
+    return user_input in exits
 
 
 def menu(exits):
@@ -189,7 +244,7 @@ def move(exits, direction):
     >>> move(rooms["Reception"]["exits"], "west") == rooms["Office"]
     False
     """
-    pass
+    return rooms[exits[direction]]
 
 
 # This is the entry point of our program
