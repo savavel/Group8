@@ -4,7 +4,7 @@ Procedure for completing Task 3:
 
 1. map.py -> Caitlin  
 2. game.py-> move() -> Izzy
-3. **game.py-> menu() -> Sam**  
+3. game.py-> menu() -> Sam
 4. game.py-> is_valid_exit() -> Izzy  
 5. game.py-> print_menu() -> Tom
 6. game.py-> print_menu_line() -> Mike  
