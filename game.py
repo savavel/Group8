@@ -106,7 +106,7 @@ def normalise_input(user_input):
     >>> normalise_input("HELP!!!!!!!")
     'help'
     """
-    pass
+    return remove_spaces(remove_punct(user_input.lower()))
 
     
 def display_room(room):
