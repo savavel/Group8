@@ -104,7 +104,7 @@ def print_menu_line(direction, leads_to):
     >>> print_menu_line("south", "Robs' room")
     Go SOUTH to Robs' room.
     """
-    pass
+    print("Go " + direction.upper() + " to " + leads_to + ".")
 
 
 def print_menu(exits):
