@@ -158,10 +158,7 @@ def is_valid_exit(exits, user_input):
     >>> is_valid_exit(rooms["Parking"]["exits"], "east")
     True
     """
-    for exit in exits:
-        if user_input in exits:
-            return True
-    return False
+    return user_input in exits
 
 
 def menu(exits):
