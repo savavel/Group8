@@ -47,7 +47,51 @@ def remove_spaces(text):
     >>> remove_spaces("   ")
     ''
     """
-    pass
+    # set start and end to nothing to start off with
+    start = None
+    end = None
+
+    # start index at 0
+    i = 0
+    # iterate through the text forwards
+    while i < len(text):
+        # if the current character isn't a space
+        if text[i] != " ":
+            # set the start of the string to the current index
+            start = i
+            # end the loop
+            break
+        else:
+            # otherwise increment the index by one
+            i += 1
+
+    # if there aren't any non-space characters return an empty string
+    if start == None:
+        return ""
+
+    # start the index at -1
+    i = -1
+    # iterate through the text backwards
+    while i > -len(text):
+        # if the current character isn't a space
+        if text[i] != " ":
+            # set the end of the string to the current index
+            end = i
+            # end the loop
+            break
+        else:
+            # otherwise increment the index by one
+            i -= 1
+
+    # if the end isn't just the end of the string, add one so the last character isn't chopped off
+    if end != -1:
+        end += 1
+    else:
+        # otherwise set the end to none so it just goes to the end of the string
+        end = None
+
+    # return the substring
+    return text[start:end]
 
 
 def normalise_input(user_input):
