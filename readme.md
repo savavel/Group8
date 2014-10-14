@@ -6,7 +6,7 @@ Procedure for completing Task 3:
 2. game.py-> move() -> Izzy
 3. **game.py-> menu() -> Sam**  
 4. game.py-> is_valid_exit() -> Izzy  
-5. **game.py-> print_menu() -> Tom**  
+5. game.py-> print_menu() -> Tom
 6. game.py-> print_menu_line() -> Mike  
 7. game.py-> exit_leads_to() -> Jay  
 8. game.py-> display_room() -> Caitlin
