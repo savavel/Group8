@@ -128,8 +128,11 @@ def display_room(room):
 
     Note: <BLANKLINE> here means that doctest should expect a blank line.
     """
-    # pass # The pass statement does nothing. Replace it with the body of your function.
-
+    print()
+    print(room["name"].upper())
+    print()
+    print(room["description"])
+    print()
     
 def exit_leads_to(exits, direction):
     """This function takes a dictionary of exits and a direction (a particular
