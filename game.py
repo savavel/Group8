@@ -17,7 +17,18 @@ def remove_punct(text):
     >>> remove_punct(",go!So.?uTh")
     'goSouTh'
     """
-    pass # The pass statement does nothing. Replace it with the body of your function.
+    # create an empty string to store the result
+    result = ""
+
+    # iterate through the text
+    for char in text:
+        # if the current character isn't punctuation
+        if char not in string.punctuation:
+            # append the current character to the result string
+            result += char
+
+    # return the result string
+    return result
     
     
 def remove_spaces(text):
