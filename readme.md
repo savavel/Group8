@@ -2,7 +2,7 @@ Procedure for completing Task 3:
 
 **Bold** - not done
 
-**1. map.py -> Caitlin**  
+1. map.py -> Caitlin   
 2. game.py-> move() -> Izzy  
 **3. game.py-> menu() -> Sam**  
 4. game.py-> is_valid_exit() -> Izzy  
