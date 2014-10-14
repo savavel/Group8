@@ -219,19 +219,16 @@ def menu(exits):
 
     # Repeat until the player enter a valid choice
     while True:
-        pass
-        # COMPLETE THIS PART:
-        
         # Display menu
-
+        print_menu(exits)
         # Read player's input
-
+        user_input = str(input())
         # Normalise the input
-
+        user_input = normalise_input(user_input)
         # Check if the input makes sense (is valid exit)
+        if is_valid_exit(exits, user_input):
             # If so, return the player's choice
-
-
+            return user_input
 
 
 def move(exits, direction):
