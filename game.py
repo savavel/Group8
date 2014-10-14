@@ -159,7 +159,7 @@ def print_menu_line(direction, leads_to):
     >>> print_menu_line("south", "Robs' room")
     Go SOUTH to Robs' room.
     """
-    pass
+    print("Go " + direction.upper() + " to " + leads_to + ".")
 
 
 def print_menu(exits):
@@ -202,10 +202,7 @@ def is_valid_exit(exits, user_input):
     >>> is_valid_exit(rooms["Parking"]["exits"], "east")
     True
     """
-    for exit in exits:
-        if user_input in exits:
-            return True
-    return False
+    return user_input in exits
 
 
 def menu(exits):
