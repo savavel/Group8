@@ -8,7 +8,7 @@ Procedure for completing Task 3:
 4. game.py-> is_valid_exit() -> Izzy  
 5. **game.py-> print_menu() -> Tom**  
 6. game.py-> print_menu_line() -> Mike  
-7. **game.py-> exit_leads_to() -> Jay**  
+7. game.py-> exit_leads_to() -> Jay  
 8. game.py-> display_room() -> Caitlin
 9. game.py-> normalise_input() -> Ed  
 10. game.py-> remove_spaces() -> Ed  
