@@ -80,7 +80,7 @@ def remove_spaces(text):
             # end the loop
             break
         else:
-            # otherwise increment the index by one
+            # otherwise decrement the index by one
             i -= 1
 
     # if the end isn't just the end of the string, add one so the last character isn't chopped off
@@ -222,7 +222,7 @@ def menu(exits):
         # Display menu
         print_menu(exits)
         # Read player's input
-        user_input = str(input())
+        user_input = str(input("> "))
         # Normalise the input
         user_input = normalise_input(user_input)
         # Check if the input makes sense (is valid exit)
